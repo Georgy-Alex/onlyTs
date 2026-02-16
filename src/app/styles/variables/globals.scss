@@ -1,0 +1,36 @@
+:root {
+    --font-family-main: 'PTSans Regular';
+    // Font sizes (adjusting to scale with screen size)
+    --font-size-s: clamp(10px, 2vw, 12px);
+    --font-size-m: clamp(13px, 3vw, 16px);
+    --font-size-l: clamp(18px, 4vw, 24px);
+    --font-size-xl: clamp(22px, 5vw, 32px);
+    --font-line-s: 16px;
+    --font-line-m: 24px;
+    --font-line-l: 32px;
+    --font-line-xl: 40px;
+    --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+    --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+
+    --main-color: rgba(66, 86, 122, 1);
+    --main-color_Wopacity: rgba(66, 86, 122, .1);
+    --main-color_W2opacity: rgba(66, 86, 122, .2);
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'PTSans Regular';
+    font-display: swap;
+    src: url('./fonts/PTSans/PTSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'PTSans Bold';
+    font-display: swap;
+    src: url('./fonts/PTSans/PTSans-Bold.ttf') format('truetype');
+}

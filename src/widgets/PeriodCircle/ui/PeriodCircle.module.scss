@@ -1,0 +1,71 @@
+.timeline__circle {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid var(--main-color_W2opacity);
+
+
+    @media (max-width: 768px) {
+        & {
+            visibility: hidden;
+        }
+    }
+}
+
+
+.timeline__point {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    /* Ellipse 339 */
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: var(--main-color);
+    transition: all .5s;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+
+    .timeline__point_text {
+        display: none;
+    }
+}
+
+.timeline__point:hover, .timeline__point__active {
+    background: #EC4899;
+    border: 1px solid rgba(48, 62, 88, 0.5);
+    background: rgba(244, 245, 249, 1);
+    width: 50px;
+    height: 50px;
+
+    .timeline__point_text {
+        display: block;
+    }
+}
+
+.timeline__label {
+    position: absolute;
+    color: var(--main-color);
+    font: var(--font-l);
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+// z-index
+.timeline__circle {
+    position: relative;
+    z-index: 2;
+}
+
+.timeline__point {
+    position: absolute;
+    z-index: 3;
+}
+
+.timeline__label {
+    pointer-events: none;
+}

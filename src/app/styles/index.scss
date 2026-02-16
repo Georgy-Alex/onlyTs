@@ -1,0 +1,12 @@
+@use "variables/globals";
+@use "reset";
+
+.app {
+    background: rgba(244, 245, 249, 1);
+    color: #1F2937;
+    overflow: hidden;
+    min-height: 100vh;
+
+    font: var(--font-m);
+    font-family: var(--font-family-main), sans-serif !important;
+}
